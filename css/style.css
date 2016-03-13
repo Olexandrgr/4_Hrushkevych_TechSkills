@@ -1,56 +1,47 @@
 @font-face {
     font-family: 'Tahoma-Bold';
     src: url('../fonts/tahoma_bold.ttf');
-    font-weight: normal;
+    font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Tahoma';
+    font-family: 'Tahoma-regular';
     src: url('../fonts/tr_tahoma_regular-webfont.eot');
     src: url('../fonts/tr_tahoma_regular-webfont.eot?#iefix') format('embedded-opentype'),
          url('../fonts/tr_tahoma_regular-webfont.woff2') format('woff2'),
          url('../fonts/tr_tahoma_regular-webfont.woff') format('woff'),
          url('../fonts/tr_tahoma_regular-webfont.ttf') format('truetype'),
          url('../fonts/tr_tahoma_regular-webfont.svg#tr_tahomaregular') format('svg');
-    font-weight: bold;
+    font-weight: normal;
     font-style: normal;
 }
 
-html {
-height: 1040px;
-background-color:#0c739f;
-background-repeat: no-repeat;
-filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#3fc4d2, endColorstr=#0c739f);
-background-image:-moz-linear-gradient(top, #3fc4d2 0%, #0c739f 100%);
-background-image:-webkit-linear-gradient(top, #3fc4d2 0%, #0c739f 100%);
-background-image:-ms-linear-gradient(top, #3fc4d2 0%, #0c739f 100%);
-background-image:linear-gradient(top, #3fc4d2 0%, #0c739f 100%);
-background-image:-o-linear-gradient(top, #3fc4d2 0%, #0c739f 100%);
-background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#3fc4d2), color-stop(100%,#0c739f));
-}
-
 body {
-font-family: Tahoma, sans-serif;
-height: 175px;
-background: rgba(18,137,167,1);
-background: -moz-linear-gradient(top, rgba(18,137,167,1) 0%, rgba(18,137,167,1) 12%, rgba(94,239,255,1) 13%, rgba(16,204,225,1) 14%, rgba(255,255,255,1) 100%);
-background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(18,137,167,1)), color-stop(12%, rgba(18,137,167,1)), color-stop(13%, rgba(94,239,255,1)), color-stop(14%, rgba(16,204,225,1)), color-stop(100%, rgba(255,255,255,1)));
-background: -webkit-linear-gradient(top, rgba(18,137,167,1) 0%, rgba(18,137,167,1) 12%, rgba(94,239,255,1) 13%, rgba(16,204,225,1) 14%, rgba(255,255,255,1) 100%);
-background: -o-linear-gradient(top, rgba(18,137,167,1) 0%, rgba(18,137,167,1) 12%, rgba(94,239,255,1) 13%, rgba(16,204,225,1) 14%, rgba(255,255,255,1) 100%);
-background: -ms-linear-gradient(top, rgba(18,137,167,1) 0%, rgba(18,137,167,1) 12%, rgba(94,239,255,1) 13%, rgba(16,204,225,1) 14%, rgba(255,255,255,1) 100%);
-background: linear-gradient(to bottom, rgba(18,137,167,1) 0%, rgba(18,137,167,1) 12%, rgba(94,239,255,1) 13%, rgba(16,204,225,1) 14%, rgba(255,255,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1289a7', endColorstr='#ffffff', GradientType=0 );
+font-family: 'Tahoma-regular', sans-serif;
+background: #0c739f;
+background-image: url(../img/grad.jpg);
+background-repeat: repeat-x;
+/*background: -moz-linear-gradient(top, rgba(94,239,255,1) 0%, rgba(17,208,225,1) 1%, rgba(255,255,255,1) 48%, rgba(64,199,211,1) 48%, rgba(12,115,159,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(94,239,255,1)), color-stop(1%, rgba(17,208,225,1)), color-stop(48%, rgba(255,255,255,1)), color-stop(48%, rgba(64,199,211,1)), color-stop(100%, rgba(12,115,159,1)));
+background: -webkit-linear-gradient(top, rgba(94,239,255,1) 0%, rgba(17,208,225,1) 1%, rgba(255,255,255,1) 48%, rgba(64,199,211,1) 48%, rgba(12,115,159,1) 100%);
+background: -o-linear-gradient(top, rgba(94,239,255,1) 0%, rgba(17,208,225,1) 1%, rgba(255,255,255,1) 48%, rgba(64,199,211,1) 48%, rgba(12,115,159,1) 100%);
+background: -ms-linear-gradient(top, rgba(94,239,255,1) 0%, rgba(17,208,225,1) 1%, rgba(255,255,255,1) 48%, rgba(64,199,211,1) 48%, rgba(12,115,159,1) 100%);
+background: linear-gradient(to bottom, rgba(94,239,255,1) 0%, rgba(17,208,225,1) 1%, rgba(255,255,255,1) 48%, rgba(64,199,211,1) 48%, rgba(12,115,159,1) 100%);
+background-size: 1% 20% 79%;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5eefff', endColorstr='#0c739f', GradientType=0 );
+*/}
+.wrapper {
+  width: 1000px;
+  margin: auto;
 }
 
-.wrapper {
+ .back-white {
   overflow: hidden;
-  width: 1000px;
   background-color: white;
   -webkit-box-shadow: 0px 4px 7px 1px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 4px 7px 1px rgba(0,0,0,0.75);
   box-shadow: 0px 4px 7px 1px rgba(0,0,0,0.75);
-  margin: auto;
 }
 
 .contact {
@@ -65,7 +56,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1289a7', end
 }
 
 .contact p b{
-font-family: Tahoma-Bold, sans-serif;
+font-family: 'Tahoma-Bold', sans-serif;
 }
 
 .header {
@@ -101,6 +92,14 @@ margin-top: 10px;
   text-align: center;
 }
 
+.contries-menu li a:hover {
+  color: red;
+}
+
+.contries-menu li a:active {
+  color: red;
+}
+
 .contries-menu li a {
   font-size: 10px;
   display: table-cell;
@@ -117,24 +116,49 @@ margin-top: 10px;
   background-image: url(../img/contries/india.png);
 }
 
+.contries-menu .india a:hover {
+  background-image: url(../img/contries/india-b.png);
+
+}
+
 .contries-menu .nepal a {
   background-image: url(../img/contries/nepal.png);
+}
+
+.contries-menu .nepal a:hover {
+  background-image: url(../img/contries/nepal-b.png);
 }
 
 .contries-menu .tibet a {
   background-image: url(../img/contries/tibet.png);
 }
 
+.contries-menu .tibet a:hover {
+  background-image: url(../img/contries/tibet-b.png);
+}
+
 .contries-menu .butan a {
   background-image: url(../img/contries/bytan.png);
+}
+
+.contries-menu .butan a:hover {
+  background-image: url(../img/contries/bytan-b.png);
 }
 
 .contries-menu .shri-lanka a {
   background-image: url(../img/contries/shri-lanka.png);
 }
 
+.contries-menu .shri-lanka a:hover {
+  background-image: url(../img/contries/shri-lanka-b.png);
+}
+
 .contries-menu .maldivu a {
   background-image: url(../img/contries/maldivu.png);
+}
+
+.contries-menu .maldivu a:hover {
+  background-image: url(../img/contries/maldivu-b.png);
 }
 
 .box-shadow {
@@ -226,7 +250,6 @@ ul.submenu-inside li {
 }
 
 .table {
-  width: 1000px;
   color: #424c43;
   line-height: 1.5;
   position: relative;
@@ -237,11 +260,11 @@ ul.submenu-inside li {
 
 
 .left-box h1 {
-  font-family: Tahoma-Bold;
+  font-family: 'Tahoma-Bold';
 }
 
 .right-box h1 {
-  font-family: Tahoma-Bold;
+  font-family: 'Tahoma-Bold';
 }
 
 .left-box {
@@ -262,7 +285,6 @@ ul.submenu-inside li {
 
 .right-box {
   width: 23%;
-  margin-left: 10px;
   padding-bottom: 15px;
   float: left;
 }
@@ -281,7 +303,7 @@ ul.submenu-inside li {
 .center {
   padding-top: 15px;
   float: left;
-  width: 53%;
+  width: 54%;
 }
 
 .center p {
